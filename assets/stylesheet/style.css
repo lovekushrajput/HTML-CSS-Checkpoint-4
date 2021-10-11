@@ -1113,4 +1113,11 @@ a{
 	.sm-flex-column{
         flex-direction: column;
 	}
+	.sm-padding-bottom{
+		padding-bottom: 5rem;
+	}
+	.sm-margin-bottom{
+		margin-bottom: 5.1rem;
+	}
+
 }
