@@ -203,20 +203,44 @@ a{
 	margin-left: 1.5rem;
 	text-align: center;
 }
-.menu{
-	position: absolute;
-	top: 2rem;
-	display: none;
-	/* display: none; */
-}
+
 .active a{
 	color: var(--primary);
+}
+.active-2 i{
+	font-size: 0.9rem;
+      margin-left: 0.5rem;
 }
 .nav ul li a:hover{
 	color: var(--primary);
 }
-.nav ul li:hover > menu{
+.menu{
+	color: grey;
+	display: none;
+}
+.nav ul li:hover .menu{
 	display: block;
+	position: absolute;
+	background-color: white;
+	padding-right: 1rem;
+	border-radius: 0.3rem;
+}
+.sub-menu-info{
+	display: none;
+}
+.sub-menu i{
+	font-size: 0.8rem;
+	margin-left: 1rem;
+}
+.sub-menu:hover .sub-menu-info{
+	position: absolute;
+	display: block;
+	background-color: white;
+	margin-left: 3.5rem;
+	border-radius: 0.4rem;
+	padding-right: 1rem;
+	width: 12rem;
+
 }
 .bar,#toggle{
 	display: none;
@@ -224,7 +248,7 @@ a{
 
 /* hero */
 .hero{
-	position: relative;
+	/* position: relative; */
 	padding-bottom: 15rem;
 	background: linear-gradient(rgba(112,110,114,0.5),rgba(0,0,0,0.5)), url(../media/hero-bg.jpg)no-repeat;
 	background-size: cover;
@@ -242,28 +266,36 @@ a{
 	color: #ffff;
 	padding-bottom: 6rem;
 }
-.hero i{
-	margin-bottom: -1rem;
-	position: absolute;
-	color: white;
-	background-color: var(--primary);
-	/* font-size: 2rem; */
-	/* display: inline-block; */
-	/* text-align: center; */
-	padding-top: 0.7rem;
-	display: flex;
-	justify-content: center;
-	height: 2.5rem;
-	width: 2.5rem;
+.right-arrow-circle {
+	width: 3rem;
+	height: 3rem;
 	border-radius: 50%;
-}
-.hero-btn a{
-	right: 0;
+	background-color: var(--primary);
 	color: white;
-	border-radius: 3rem;
-	padding: 0.8rem 3rem 0.6rem 3rem;
+	font-size: 0.7rem;
+	position: absolute;
+	top: -10%;
+	left: 0;
+	bottom: 1.8rem;
+	right: 10%;
+	padding: 1.2rem;
+  }
+  .hero-btn{
 	background-color: rgb(88,75,72);
-}
+	max-width: fit-content;
+	padding: 0.5rem 1.8rem;
+	color: var(--white);
+	border-radius: 2rem;
+	position: relative;
+  }
+  .hero-btn a{
+	color: white;
+	font-size: 0.9rem;
+	margin-left: 1.5rem;
+  }
+  .hero-btn:hover {
+	background-color: var(--primary);
+  }
 /* hero-info */
 .hero-info{
 	padding-bottom: 2rem;
@@ -312,17 +344,17 @@ a{
 }
 /* about-section(3) */
 .about{
-	position: relative;
 	background-color: var(--bg-about);
+}
+.about aside{
+	position: relative;
 }
 .about-image{
 	height: 32rem;
 }
 .play-button{
-	top: 14rem;
-	left: 13.5rem;
-	bottom: 0;
-	right: 0;
+	left: 43%;
+	bottom: 47%;
 	position: absolute;
 	border-radius: 50%;
 }
@@ -345,6 +377,9 @@ a{
 }
 .text{
 	color: var(--text-light);
+}
+.about-icon{
+	margin-right: 0.6rem ;
 }
 .about-icon i{
 	display: flex;
@@ -727,7 +762,6 @@ a{
 	padding-bottom: 1.7rem;
 }
 .faq-info{
-	/* padding-right: 20rem; */
 	margin-bottom: 1.3rem;
 	padding: 0.9rem;
 	display: inline-block;
@@ -737,7 +771,6 @@ a{
 	color: rgb(250,223,213);
 	margin-top: 0.3rem;
 	font-size: 1.2rem;
-	/* padding-left: 0.3rem; */
 }
 .active-icon-faq-2{
 	color: var(--primary);
@@ -887,19 +920,20 @@ a{
 	margin: 1.5rem 0;
 }
 .newslatter form{
-	margin: 2rem 0;
+	width: 100%;
+	position: relative;
+	height: 3.1rem;
 	border-radius: 1.9rem;
-	/* padding: 0.3rem 0; */
 	border: 0.08rem solid rgb(244,184,161);
-	/* width: 60%; */
 	background-color: white;
-	padding-left: 75%;
-	padding-right: 0rem;
 }
 .newslatter input{
+
+	right: 0;
+	position: absolute;
 	border: 0;
 	background-color: var(--primary);
-	padding: 0.8rem 2rem;
+	padding: 0.9rem 2rem;
 	border-radius: 7rem;
 	color: white;
 	font-size: 1rem;	
@@ -949,7 +983,6 @@ a{
 	align-items: center;
 	height: 3rem;
 	width: 3rem;
-	/* border-radius: 50%; */
 	background-color: var(--primary);
 	color: white;
 }
@@ -959,7 +992,7 @@ a{
 	padding: 1.2rem 0;
 	background-color: rgb(244,240,244);
 }
-.blog-hero h2{
+.blog-hero a{
 	font-size: 1.3rem;
 	color: var(--text-light);
 }
@@ -1004,19 +1037,25 @@ a{
 	justify-content: center;
 	align-items: center;
 	height: 3rem;
+	color: grey;
 	width: 3rem;
 	border: 0.1rem solid grey;
 }
+.scroll-icon:hover{
+	color: white;
+	background-color: var(--primary);
+	border: 0;
+}
 .active-scroll-icon{
+	color: white;
 	border: 0;
 	background-color: var(--primary);
 }
 .blog-icon-1 a{
 	margin: 1rem 0;
-	color: grey;
+	/* color: grey; */
 	margin-left: 0.6rem;
 }
-
 @media screen and (max-width:768px) {
 	html{
 		font-size: 12px;
@@ -1046,7 +1085,7 @@ a{
 		bottom: 0;
 		width: 100%;
 		height: 100vh;
-		background-color: rgba(255,255,255,0.7);
+		background-color: rgba(255,255,255,0.8);
 		padding-top: 5rem;
 		z-index: 6;
 		/* font-size: 2rem; */
@@ -1063,6 +1102,10 @@ a{
 		position: fixed;
 		font-size: 1.7rem;
 		color: var(--primary);
+	}
+    .sm_play-button{
+		margin-right: 13rem;
+		
 	}
 	.sm-width-full{
 		width: 100%;

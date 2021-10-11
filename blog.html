@@ -22,6 +22,10 @@
                     <a class="brand-logo" href="#">Flexor</a>
                 </li>
             </ul>
+            <label class="bar" for="toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="toggle">
             <nav class="nav">
                 <ul class="flex sm-flex-column">
                     <li class="active">
@@ -43,28 +47,31 @@
                         <a href="#pricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="blog.html">Blog</a>
                     </li>
-                    <li>
+                    <li class="active-2">
                         <a href="#">Drop Down<i class="fas fa-chevron-down"></i></a>
-                    </li>
                     <div class="menu">
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
-                            <li><a class="active" href="#">Drop Down 2 </a> <i class="fas fa-chevron-right"></i></li>
-                            <div class="sub-menu"></div>
-                            <ul>
-                                <li><a href="#">Deep Drop down 1</a></li>
-                                <li><a href="#">Deep Drop down 2</a></li>
-                                <li><a href="#">Deep Drop down 3</a></li>
-                                <li><a href="#">Deep Drop down 4</a></li>
-                                <li><a href="#">Deep Drop down 5</a></li>
-                            </ul>
+                            <li class="sub-menu"><a href="#">Drop Down 2<i class="fas fa-chevron-right"></i></a>
+                                <div class="sub-menu-info">
+                                    <ul>
+                                        <li><a href="#">Deep Drop down 1</a></li>
+                                        <li><a href="#">Deep Drop down 2</a></li>
+                                        <li><a href="#">Deep Drop down 3</a></li>
+                                        <li><a href="#">Deep Drop down 4</a></li>
+                                        <li><a href="#">Deep Drop down 5</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                           
                             <li><a href="#">Drop Down 3</a></li>
                             <li><a href="#">Drop Down 4</a></li>
                             <li><a href="#">Drop Down 5</a></li>
                         </ul>
                     </div>
+                    </li>
                     <li>
                         <a href="#">Contact</a>
                     </li>
@@ -75,7 +82,7 @@
     <!-- blog-hero -->
     <section class="blog-hero">
         <div class="container">
-            <h2> <strong>Home</strong> / Blog </h2>
+            <a href="index.html">  <strong>Home</strong></a>/ Blog
       <h4>Blog</h4>
         </div>
     </section>
@@ -173,10 +180,10 @@
             <a class="scroll-icon" href="#"><i class="fas fa-chevron-left"></i></a>
         </div>
         <div>
-            <a class="scroll-icon active-scroll-icon" href="#">1</a>
+            <a class="scroll-icon " href="#">1</a>
         </div>
         <div>
-            <a class="scroll-icon" href="#">2</a>
+            <a class="scroll-icon active-scroll-icon" href="#">2</a>
         </div>
         <div>
             <a class="scroll-icon" href="#">3</a>
